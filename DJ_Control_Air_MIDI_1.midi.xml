@@ -87,7 +87,7 @@
             <control>
                 <group>[Channel1]</group>
                 <key>volume</key>
-                <description>MIDI Learned from 280 messages.</description>
+                <description>MIDI Learned from 218 messages.</description>
                 <status>0xB0</status>
                 <midino>0x36</midino>
                 <options>
@@ -270,16 +270,6 @@
                 <description>MIDI Learned from 34 messages.</description>
                 <status>0x90</status>
                 <midino>0x0D</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>volume</key>
-                <description>MIDI Learned from 266 messages.</description>
-                <status>0xB0</status>
-                <midino>0x30</midino>
                 <options>
                     <normal/>
                 </options>
