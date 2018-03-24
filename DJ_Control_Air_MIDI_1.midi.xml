@@ -1,8 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <MixxxControllerPreset mixxxVersion="" schemaVersion="1">
-    <info/>
+    <info>
+      <name>Hercules DJ Control Air S</name>
+		  <author>Erwan Osouf</author>
+		  <description>Custom Mapping</description>
+    </info>
     <controller id="DJ">
-        <scriptfiles/>
+        <scriptfiles />
         <controls>
             <control>
                 <group>[Channel1]</group>
