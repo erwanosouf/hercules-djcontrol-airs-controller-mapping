@@ -6,7 +6,9 @@
 		  <description>Custom Mapping</description>
     </info>
     <controller id="DJ">
-        <scriptfiles />
+        <scriptfiles>
+          <file filename="DJ_Control_Air_S-scripts.js" functionprefix="DjControlAirS"/>
+        </scriptfiles>
         <controls>
             <control>
                 <group>[Channel1]</group>
