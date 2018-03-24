@@ -7,6 +7,6 @@
 
 ## MIDI Debug
 
-`amidi -l` : list MIDI Devices
-`amidi -p hw:1,0,0 -d` : Dumps all MIDI signals from hw:1,0,0
-`amidi -p hw:1,0,0 -S "80 04 7f"` : Sends Signal "80 04 7f" to hw:1,0,0
+- `amidi -l` : list MIDI Devices
+- `amidi -p hw:1,0,0 -d` : Dumps all MIDI signals from hw:1,0,0
+- `amidi -p hw:1,0,0 -S "80 04 7f"` : Sends Signal "80 04 7f" to hw:1,0,0
