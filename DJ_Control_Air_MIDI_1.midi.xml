@@ -476,6 +476,86 @@
               <midino>0x28</midino>
               <minimum>0.5</minimum>
           </output>
+          <output>
+              <group>[Channel1]</group>
+              <key>keylock</key>
+              <description>Keylock Deck A LED</description>
+              <status>0x90</status>
+              <midino>0x04</midino>
+              <minimum>0.1</minimum>
+          </output>
+          <output>
+              <group>[Channel2]</group>
+              <key>keylock</key>
+              <description>Keylock Deck B LED</description>
+              <status>0x90</status>
+              <midino>0x1A</midino>
+              <minimum>0.1</minimum>
+          </output>
+          <output>
+              <group>[Channel1]</group>
+              <key>beatloop_1_enabled</key>
+              <description>Channel 1 : Loop 1 Led.</description>
+              <status>0x90</status>
+              <midino>0x09</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Channel1]</group>
+              <key>beatloop_2_enabled</key>
+              <description>Channel 1 : Loop 2 Led.</description>
+              <status>0x90</status>
+              <midino>0x0A</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Channel1]</group>
+              <key>beatloop_4_enabled</key>
+              <description>Channel 1 : Loop 3 Led.</description>
+              <status>0x90</status>
+              <midino>0x0B</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Channel1]</group>
+              <key>beatloop_8_enabled</key>
+              <description>Channel 1 : Loop 4 Led.</description>
+              <status>0x90</status>
+              <midino>0x0C</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Channel2]</group>
+              <key>beatloop_1_enabled</key>
+              <description>Channel 2 : Loop 1 Led.</description>
+              <status>0x90</status>
+              <midino>0x1F</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Channel2]</group>
+              <key>beatloop_2_enabled</key>
+              <description>Channel 2 : Loop 2 Led.</description>
+              <status>0x90</status>
+              <midino>0x20</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Channel2]</group>
+              <key>beatloop_4_enabled</key>
+              <description>Channel 2 : Loop 3 Led.</description>
+              <status>0x90</status>
+              <midino>0x21</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Channel2]</group>
+              <key>beatloop_8_enabled</key>
+              <description>Channel 2 : Loop 4 Led.</description>
+              <status>0x90</status>
+              <midino>0x22</midino>
+              <minimum>0.5</minimum>
+          </output>
         </outputs>
     </controller>
 </MixxxControllerPreset>
