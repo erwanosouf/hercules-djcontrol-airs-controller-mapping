@@ -527,6 +527,7 @@
               <midino>0x28</midino>
               <minimum>0.5</minimum>
           </output>
+          <!--
           <output>
               <group>[Channel1]</group>
               <key>keylock</key>
@@ -543,6 +544,7 @@
               <midino>0x1A</midino>
               <minimum>0.1</minimum>
           </output>
+          -->
           <output>
               <group>[Channel1]</group>
               <key>beatloop_1_enabled</key>
