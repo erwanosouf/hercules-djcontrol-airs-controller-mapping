@@ -18,6 +18,7 @@
               <midino>0x3A</midino>
               <options>
                   <normal/>
+                  <Soft-takeover />
               </options>
           </control>
             <control>
@@ -53,11 +54,12 @@
             <control>
                 <group>[Channel2]</group>
                 <key>volume</key>
-                <description>MIDI Learned from 372 messages.</description>
+                <description>Channel 2 : Volume.</description>
                 <status>0xB0</status>
                 <midino>0x3B</midino>
                 <options>
                     <normal/>
+                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -73,11 +75,12 @@
             <control>
                 <group>[Channel2]</group>
                 <key>rate</key>
-                <description>MIDI Learned from 1638 messages.</description>
+                <description>Channel 2 : Speed Control.</description>
                 <status>0xB0</status>
                 <midino>0x35</midino>
                 <options>
                     <normal/>
+                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -123,11 +126,12 @@
             <control>
                 <group>[Channel1]</group>
                 <key>rate</key>
-                <description>MIDI Learned from 816 messages.</description>
+                <description>Channel 1 : Speed Control.</description>
                 <status>0xB0</status>
                 <midino>0x34</midino>
                 <options>
                     <normal/>
+                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -163,11 +167,12 @@
             <control>
                 <group>[EqualizerRack1_[Channel1]_Effect1]</group>
                 <key>parameter1</key>
-                <description>MIDI Learned from 1056 messages.</description>
+                <description>Channel 1 : Filter Low.</description>
                 <status>0xB0</status>
                 <midino>0x39</midino>
                 <options>
                     <normal/>
+                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -203,11 +208,12 @@
             <control>
                 <group>[EqualizerRack1_[Channel2]_Effect1]</group>
                 <key>parameter1</key>
-                <description>MIDI Learned from 800 messages.</description>
+                <description>Channel 2 : Filter Low.</description>
                 <status>0xB0</status>
                 <midino>0x3E</midino>
                 <options>
                     <normal/>
+                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -243,11 +249,12 @@
             <control>
                 <group>[EqualizerRack1_[Channel1]_Effect1]</group>
                 <key>parameter2</key>
-                <description>MIDI Learned from 3066 messages.</description>
+                <description>Channel 1 : Filter Mid.</description>
                 <status>0xB0</status>
                 <midino>0x38</midino>
                 <options>
                     <normal/>
+                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -283,11 +290,12 @@
             <control>
                 <group>[EqualizerRack1_[Channel2]_Effect1]</group>
                 <key>parameter2</key>
-                <description>MIDI Learned from 252 messages.</description>
+                <description>Channel 2 : Filter Mid.</description>
                 <status>0xB0</status>
                 <midino>0x3D</midino>
                 <options>
                     <normal/>
+                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -313,11 +321,12 @@
             <control>
                 <group>[EqualizerRack1_[Channel1]_Effect1]</group>
                 <key>parameter3</key>
-                <description>MIDI Learned from 1840 messages.</description>
+                <description>Channel 1 : Filter High.</description>
                 <status>0xB0</status>
                 <midino>0x37</midino>
                 <options>
                     <normal/>
+                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -363,11 +372,12 @@
             <control>
                 <group>[EqualizerRack1_[Channel2]_Effect1]</group>
                 <key>parameter3</key>
-                <description>MIDI Learned from 690 messages.</description>
+                <description>Channel 2 : Filter High.</description>
                 <status>0xB0</status>
                 <midino>0x3C</midino>
                 <options>
                     <normal/>
+                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -383,11 +393,12 @@
             <control>
                 <group>[Channel1]</group>
                 <key>volume</key>
-                <description>MIDI Learned from 218 messages.</description>
+                <description>Channel 1 : Volume.</description>
                 <status>0xB0</status>
                 <midino>0x36</midino>
                 <options>
                     <normal/>
+                    <Soft-takeover />
                 </options>
             </control>
             <control>

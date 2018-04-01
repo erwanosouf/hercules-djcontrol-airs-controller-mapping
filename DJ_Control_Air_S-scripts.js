@@ -17,24 +17,6 @@ DjControlAirS.init  = function(id) {
     midi.sendShortMsg(0x90, 0x3A, 0x7f); // headset "Cue" button LED
   }
 
-  // Set soft-takeover for all Sampler volumes
-  for (var i = engine.getValue("[Master]","num_samplers"); i>=1; i--) {
-    engine.softTakeover("[Sampler" + i + "]", "pregain", true);
-  }
-
-  // Set soft-takeover for all applicable Deck controls
-  // Useless as not Controlled by a Script.
-  /*
-  for (var i = engine.getValue("[Master]","num_decks"); i>=1; i--) {
-    engine.softTakeover("[Channel" + i + "]", "volume", true);
-    engine.softTakeover("[Channel" + i + "]", "filterHigh", true);
-    engine.softTakeover("[Channel" + i + "]", "filterMid", true);
-    engine.softTakeover("[Channel" + i + "]", "filterLow", true);
-    engine.softTakeover("[Channel" + i + "]", "rate", true);
-  }
-
-  engine.softTakeover("[Master]","crossfader", true);
-  */
   /*
   engine.connectControl("[Channel1]", "beat_active", "HerculesAir.beatProgressDeckA")
   engine.connectControl("[Channel1]", "play", "HerculesAir.playDeckA")
