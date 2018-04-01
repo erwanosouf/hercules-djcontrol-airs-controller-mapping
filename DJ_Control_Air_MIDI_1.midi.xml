@@ -10,6 +10,16 @@
           <file filename="DJ_Control_Air_S-scripts.js" functionprefix="DjControlAirS"/>
         </scriptfiles>
         <controls>
+          <control>
+              <group>[Master]</group>
+              <key>crossfader</key>
+              <description>Crossfader</description>
+              <status>0xB0</status>
+              <midino>0x3A</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
             <control>
                 <group>[Channel1]</group>
                 <key>beatloop_8_toggle</key>
@@ -23,7 +33,7 @@
             <control>
                 <group>[Playlist]</group>
                 <key>SelectPrevTrack</key>
-                <description>MIDI Learned from 58 messages.</description>
+                <description>Next Song in Playlist</description>
                 <status>0x90</status>
                 <midino>0x33</midino>
                 <options>
@@ -86,16 +96,6 @@
                 <description>MIDI Learned from 21 messages.</description>
                 <status>0x90</status>
                 <midino>0x0B</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Master]</group>
-                <key>crossfader</key>
-                <description>MIDI Learned from 291 messages.</description>
-                <status>0xB0</status>
-                <midino>0x3A</midino>
                 <options>
                     <normal/>
                 </options>
@@ -420,6 +420,28 @@
                     <script-binding/>
                 </options>
             </control>
+            <!-- Disables scratching for now.
+            <control>
+                <group>[Channel1]</group>
+                <key>DjControlAirS.wheelTouch</key>
+                <description>Jog Wheel Deck 1</description>
+                <status>0x90</status>
+                <midino>0x16</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>DjControlAirS.wheelTouch</key>
+                <description>Jog Wheel Deck 2</description>
+                <status>0x90</status>
+                <midino>0x2C</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+          -->
         </controls>
         <outputs>
           <output>
