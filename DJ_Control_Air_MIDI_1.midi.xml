@@ -21,6 +21,26 @@
                   <Soft-takeover />
               </options>
           </control>
+          <control>
+              <group>[Master]</group>
+              <key>headGain_down</key>
+              <description>Headphones Volume Down</description>
+              <status>0x90</status>
+              <midino>0x3B</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
+          <control>
+              <group>[Master]</group>
+              <key>headGain_up</key>
+              <description>Headphones Volume Up</description>
+              <status>0x90</status>
+              <midino>0x3C</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
             <control>
                 <group>[Channel1]</group>
                 <key>beatloop_8_toggle</key>
