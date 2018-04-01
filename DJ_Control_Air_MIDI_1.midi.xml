@@ -41,6 +41,16 @@
                   <normal/>
               </options>
           </control>
+          <control>
+              <group>[Recording]</group>
+              <key>toggle_recording</key>
+              <description>Toggle Recording</description>
+              <status>0x90</status>
+              <midino>0x30</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
             <control>
                 <group>[Channel1]</group>
                 <key>beatloop_8_toggle</key>
@@ -475,6 +485,16 @@
           -->
         </controls>
         <outputs>
+          <output>
+              <group>[Recording]</group>
+              <key>status</key>
+              <description>Recording Status</description>
+              <status>0x90</status>
+              <midino>0x30</midino>
+              <!-- Inverted, IDK why ... -->
+              <on>0x00</on>
+              <off>0x7F</off>
+          </output>
           <output>
               <group>[Channel1]</group>
               <key>pfl</key>
