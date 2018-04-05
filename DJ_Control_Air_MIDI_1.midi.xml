@@ -483,6 +483,86 @@
                 </options>
             </control>
           -->
+          <control>
+              <group>[Sampler1]</group>
+              <key>play</key>
+              <description>Sample 1 - Deck 1 : Play.</description>
+              <status>0x90</status>
+              <midino>0x05</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
+          <control>
+              <group>[Sampler2]</group>
+              <key>play</key>
+              <description>Sample 2 - Deck 1 : Play.</description>
+              <status>0x90</status>
+              <midino>0x06</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
+          <control>
+              <group>[Sampler3]</group>
+              <key>play</key>
+              <description>Sample 3 - Deck 1 : Play.</description>
+              <status>0x90</status>
+              <midino>0x07</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
+          <control>
+              <group>[Sampler4]</group>
+              <key>play</key>
+              <description>Sample 4 - Deck 1 : Play.</description>
+              <status>0x90</status>
+              <midino>0x08</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
+          <control>
+              <group>[Sampler1]</group>
+              <key>play</key>
+              <description>Sample 1 - Deck 2 : Play.</description>
+              <status>0x90</status>
+              <midino>0x1B</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
+          <control>
+              <group>[Sampler2]</group>
+              <key>play</key>
+              <description>Sample 2 - Deck 2 : Play.</description>
+              <status>0x90</status>
+              <midino>0x1C</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
+          <control>
+              <group>[Sampler3]</group>
+              <key>play</key>
+              <description>Sample 3 - Deck 2 : Play.</description>
+              <status>0x90</status>
+              <midino>0x1D</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
+          <control>
+              <group>[Sampler4]</group>
+              <key>play</key>
+              <description>Sample 4 - Deck 2 : Play.</description>
+              <status>0x90</status>
+              <midino>0x1E</midino>
+              <options>
+                  <normal/>
+              </options>
+          </control>
         </controls>
         <outputs>
           <output>
@@ -607,6 +687,70 @@
               <description>Channel 2 : Loop 4 Led.</description>
               <status>0x90</status>
               <midino>0x22</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Sampler1]</group>
+              <key>play</key>
+              <description>Sample 1 - Deck 1 : Play.</description>
+              <status>0x90</status>
+              <midino>0x05</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Sampler2]</group>
+              <key>play</key>
+              <description>Sample 2 - Deck 1 : Play.</description>
+              <status>0x90</status>
+              <midino>0x06</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Sampler3]</group>
+              <key>play</key>
+              <description>Sample 3 - Deck 1 : Play.</description>
+              <status>0x90</status>
+              <midino>0x07</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Sampler4]</group>
+              <key>play</key>
+              <description>Sample 4 - Deck 1 : Play.</description>
+              <status>0x90</status>
+              <midino>0x08</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Sampler1]</group>
+              <key>play</key>
+              <description>Sample 1 - Deck 2 : Play.</description>
+              <status>0x90</status>
+              <midino>0x1B</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Sampler2]</group>
+              <key>play</key>
+              <description>Sample 2 - Deck 2 : Play.</description>
+              <status>0x90</status>
+              <midino>0x1C</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Sampler3]</group>
+              <key>play</key>
+              <description>Sample 3 - Deck 2 : Play.</description>
+              <status>0x90</status>
+              <midino>0x1D</midino>
+              <minimum>0.5</minimum>
+          </output>
+          <output>
+              <group>[Sampler4]</group>
+              <key>play</key>
+              <description>Sample 4 - Deck 2 : Play.</description>
+              <status>0x90</status>
+              <midino>0x1E</midino>
               <minimum>0.5</minimum>
           </output>
         </outputs>
