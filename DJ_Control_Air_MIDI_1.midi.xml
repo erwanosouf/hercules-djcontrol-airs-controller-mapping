@@ -1,56 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <MixxxControllerPreset mixxxVersion="" schemaVersion="1">
     <info>
-      <name>Hercules DJ Control Air S</name>
-		  <author>Erwan Osouf</author>
-		  <description>Custom Mapping</description>
+        <name>Hercules DJ Control Air S</name>
+        <author>Erwan Osouf</author>
+        <description>Custom Mapping</description>
     </info>
     <controller id="DJ">
         <scriptfiles>
-          <file filename="DJ_Control_Air_S-scripts.js" functionprefix="DjControlAirS"/>
+            <file functionprefix="DjControlAirS" filename="DJ_Control_Air_S-scripts.js"/>
         </scriptfiles>
         <controls>
-          <control>
-              <group>[Master]</group>
-              <key>crossfader</key>
-              <description>Crossfader</description>
-              <status>0xB0</status>
-              <midino>0x3A</midino>
-              <options>
-                  <normal/>
-                  <Soft-takeover />
-              </options>
-          </control>
-          <control>
-              <group>[Master]</group>
-              <key>headGain_down</key>
-              <description>Headphones Volume Down</description>
-              <status>0x90</status>
-              <midino>0x3B</midino>
-              <options>
-                  <normal/>
-              </options>
-          </control>
-          <control>
-              <group>[Master]</group>
-              <key>headGain_up</key>
-              <description>Headphones Volume Up</description>
-              <status>0x90</status>
-              <midino>0x3C</midino>
-              <options>
-                  <normal/>
-              </options>
-          </control>
-          <control>
-              <group>[Recording]</group>
-              <key>toggle_recording</key>
-              <description>Toggle Recording</description>
-              <status>0x90</status>
-              <midino>0x30</midino>
-              <options>
-                  <normal/>
-              </options>
-          </control>
             <control>
                 <group>[Channel1]</group>
                 <key>beatloop_8_toggle</key>
@@ -72,6 +31,16 @@
                 </options>
             </control>
             <control>
+                <group>[Channel1]</group>
+                <key>DjControlAirS.wheelTurn</key>
+                <description>Jog Wheel Deck 1</description>
+                <status>0xB0</status>
+                <midino>0x30</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
                 <group>[Channel2]</group>
                 <key>beatloop_8_toggle</key>
                 <description>MIDI Learned from 152 messages.</description>
@@ -88,8 +57,17 @@
                 <status>0xB0</status>
                 <midino>0x3B</midino>
                 <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler2]</group>
+                <key>play</key>
+                <description>Sample 2 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x06</midino>
+                <options>
                     <normal/>
-                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -109,8 +87,17 @@
                 <status>0xB0</status>
                 <midino>0x35</midino>
                 <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler2]</group>
+                <key>play</key>
+                <description>Sample 2 - Deck 2 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1C</midino>
+                <options>
                     <normal/>
-                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -134,11 +121,31 @@
                 </options>
             </control>
             <control>
+                <group>[Master]</group>
+                <key>crossfader</key>
+                <description>Crossfader</description>
+                <status>0xB0</status>
+                <midino>0x3A</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
                 <group>[Channel2]</group>
                 <key>beatloop_4_toggle</key>
                 <description>MIDI Learned from 42 messages.</description>
                 <status>0x90</status>
                 <midino>0x21</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler1]</group>
+                <key>play</key>
+                <description>Sample 1 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x05</midino>
                 <options>
                     <normal/>
                 </options>
@@ -160,8 +167,17 @@
                 <status>0xB0</status>
                 <midino>0x34</midino>
                 <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler1]</group>
+                <key>play</key>
+                <description>Sample 1 - Deck 2 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1B</midino>
+                <options>
                     <normal/>
-                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -195,14 +211,23 @@
                 </options>
             </control>
             <control>
+                <group>[Master]</group>
+                <key>headGain_up</key>
+                <description>Headphones Volume Up</description>
+                <status>0x90</status>
+                <midino>0x3C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
                 <group>[EqualizerRack1_[Channel1]_Effect1]</group>
                 <key>parameter1</key>
                 <description>Channel 1 : Filter Low.</description>
                 <status>0xB0</status>
                 <midino>0x39</midino>
                 <options>
-                    <normal/>
-                    <Soft-takeover />
+                    <soft-takeover/>
                 </options>
             </control>
             <control>
@@ -242,8 +267,7 @@
                 <status>0xB0</status>
                 <midino>0x3E</midino>
                 <options>
-                    <normal/>
-                    <Soft-takeover />
+                    <soft-takeover/>
                 </options>
             </control>
             <control>
@@ -267,11 +291,31 @@
                 </options>
             </control>
             <control>
+                <group>[Recording]</group>
+                <key>toggle_recording</key>
+                <description>Toggle Recording</description>
+                <status>0x90</status>
+                <midino>0x30</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
                 <group>[Channel1]</group>
                 <key>pfl</key>
                 <description>MIDI Learned from 52 messages.</description>
                 <status>0x90</status>
                 <midino>0x14</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>headGain_down</key>
+                <description>Headphones Volume Down</description>
+                <status>0x90</status>
+                <midino>0x3B</midino>
                 <options>
                     <normal/>
                 </options>
@@ -283,8 +327,7 @@
                 <status>0xB0</status>
                 <midino>0x38</midino>
                 <options>
-                    <normal/>
-                    <Soft-takeover />
+                    <soft-takeover/>
                 </options>
             </control>
             <control>
@@ -324,8 +367,7 @@
                 <status>0xB0</status>
                 <midino>0x3D</midino>
                 <options>
-                    <normal/>
-                    <Soft-takeover />
+                    <soft-takeover/>
                 </options>
             </control>
             <control>
@@ -334,6 +376,16 @@
                 <description>MIDI Learned from 36 messages.</description>
                 <status>0x90</status>
                 <midino>0x24</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler4]</group>
+                <key>play</key>
+                <description>Sample 4 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x08</midino>
                 <options>
                     <normal/>
                 </options>
@@ -355,8 +407,17 @@
                 <status>0xB0</status>
                 <midino>0x37</midino>
                 <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler4]</group>
+                <key>play</key>
+                <description>Sample 4 - Deck 2 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1E</midino>
+                <options>
                     <normal/>
-                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -391,6 +452,16 @@
             </control>
             <control>
                 <group>[Channel2]</group>
+                <key>DjControlAirS.wheelTurn</key>
+                <description>Jog Wheel Deck 2</description>
+                <status>0xB0</status>
+                <midino>0x31</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
                 <key>rate_temp_down</key>
                 <description>MIDI Learned from 38 messages.</description>
                 <status>0x90</status>
@@ -406,8 +477,17 @@
                 <status>0xB0</status>
                 <midino>0x3C</midino>
                 <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler3]</group>
+                <key>play</key>
+                <description>Sample 3 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x07</midino>
+                <options>
                     <normal/>
-                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -427,8 +507,17 @@
                 <status>0xB0</status>
                 <midino>0x36</midino>
                 <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler3]</group>
+                <key>play</key>
+                <description>Sample 3 - Deck 2 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1D</midino>
+                <options>
                     <normal/>
-                    <Soft-takeover />
                 </options>
             </control>
             <control>
@@ -441,318 +530,177 @@
                     <normal/>
                 </options>
             </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>DjControlAirS.wheelTurn</key>
-                <description>Jog Wheel Deck 1</description>
-                <status>0xB0</status>
-                <midino>0x30</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DjControlAirS.wheelTurn</key>
-                <description>Jog Wheel Deck 2</description>
-                <status>0xB0</status>
-                <midino>0x31</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <!-- Disables scratching for now.
-            <control>
-                <group>[Channel1]</group>
-                <key>DjControlAirS.wheelTouch</key>
-                <description>Jog Wheel Deck 1</description>
-                <status>0x90</status>
-                <midino>0x16</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DjControlAirS.wheelTouch</key>
-                <description>Jog Wheel Deck 2</description>
-                <status>0x90</status>
-                <midino>0x2C</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-          -->
-          <control>
-              <group>[Sampler1]</group>
-              <key>play</key>
-              <description>Sample 1 - Deck 1 : Play.</description>
-              <status>0x90</status>
-              <midino>0x05</midino>
-              <options>
-                  <normal/>
-              </options>
-          </control>
-          <control>
-              <group>[Sampler2]</group>
-              <key>play</key>
-              <description>Sample 2 - Deck 1 : Play.</description>
-              <status>0x90</status>
-              <midino>0x06</midino>
-              <options>
-                  <normal/>
-              </options>
-          </control>
-          <control>
-              <group>[Sampler3]</group>
-              <key>play</key>
-              <description>Sample 3 - Deck 1 : Play.</description>
-              <status>0x90</status>
-              <midino>0x07</midino>
-              <options>
-                  <normal/>
-              </options>
-          </control>
-          <control>
-              <group>[Sampler4]</group>
-              <key>play</key>
-              <description>Sample 4 - Deck 1 : Play.</description>
-              <status>0x90</status>
-              <midino>0x08</midino>
-              <options>
-                  <normal/>
-              </options>
-          </control>
-          <control>
-              <group>[Sampler1]</group>
-              <key>play</key>
-              <description>Sample 1 - Deck 2 : Play.</description>
-              <status>0x90</status>
-              <midino>0x1B</midino>
-              <options>
-                  <normal/>
-              </options>
-          </control>
-          <control>
-              <group>[Sampler2]</group>
-              <key>play</key>
-              <description>Sample 2 - Deck 2 : Play.</description>
-              <status>0x90</status>
-              <midino>0x1C</midino>
-              <options>
-                  <normal/>
-              </options>
-          </control>
-          <control>
-              <group>[Sampler3]</group>
-              <key>play</key>
-              <description>Sample 3 - Deck 2 : Play.</description>
-              <status>0x90</status>
-              <midino>0x1D</midino>
-              <options>
-                  <normal/>
-              </options>
-          </control>
-          <control>
-              <group>[Sampler4]</group>
-              <key>play</key>
-              <description>Sample 4 - Deck 2 : Play.</description>
-              <status>0x90</status>
-              <midino>0x1E</midino>
-              <options>
-                  <normal/>
-              </options>
-          </control>
         </controls>
         <outputs>
-          <output>
-              <group>[Recording]</group>
-              <key>status</key>
-              <description>Recording Status</description>
-              <status>0x90</status>
-              <midino>0x30</midino>
-              <!-- Inverted, IDK why ... -->
-              <on>0x00</on>
-              <off>0x7F</off>
-          </output>
-          <output>
-              <group>[Channel1]</group>
-              <key>pfl</key>
-              <description>Listen Button Deck A LED</description>
-              <status>0x90</status>
-              <midino>0x14</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Channel2]</group>
-              <key>pfl</key>
-              <description>Listen Button Deck B LED</description>
-              <status>0x90</status>
-              <midino>0x2A</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Channel1]</group>
-              <key>play</key>
-              <description>Play Button LED Deck A</description>
-              <status>0x90</status>
-              <midino>0x12</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Channel2]</group>
-              <key>play</key>
-              <description>Play Button LED Deck B</description>
-              <status>0x90</status>
-              <midino>0x28</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <!--
-          <output>
-              <group>[Channel1]</group>
-              <key>keylock</key>
-              <description>Keylock Deck A LED</description>
-              <status>0x90</status>
-              <midino>0x04</midino>
-              <minimum>0.1</minimum>
-          </output>
-          <output>
-              <group>[Channel2]</group>
-              <key>keylock</key>
-              <description>Keylock Deck B LED</description>
-              <status>0x90</status>
-              <midino>0x1A</midino>
-              <minimum>0.1</minimum>
-          </output>
-          -->
-          <output>
-              <group>[Channel1]</group>
-              <key>beatloop_1_enabled</key>
-              <description>Channel 1 : Loop 1 Led.</description>
-              <status>0x90</status>
-              <midino>0x09</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Channel1]</group>
-              <key>beatloop_2_enabled</key>
-              <description>Channel 1 : Loop 2 Led.</description>
-              <status>0x90</status>
-              <midino>0x0A</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Channel1]</group>
-              <key>beatloop_4_enabled</key>
-              <description>Channel 1 : Loop 3 Led.</description>
-              <status>0x90</status>
-              <midino>0x0B</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Channel1]</group>
-              <key>beatloop_8_enabled</key>
-              <description>Channel 1 : Loop 4 Led.</description>
-              <status>0x90</status>
-              <midino>0x0C</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Channel2]</group>
-              <key>beatloop_1_enabled</key>
-              <description>Channel 2 : Loop 1 Led.</description>
-              <status>0x90</status>
-              <midino>0x1F</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Channel2]</group>
-              <key>beatloop_2_enabled</key>
-              <description>Channel 2 : Loop 2 Led.</description>
-              <status>0x90</status>
-              <midino>0x20</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Channel2]</group>
-              <key>beatloop_4_enabled</key>
-              <description>Channel 2 : Loop 3 Led.</description>
-              <status>0x90</status>
-              <midino>0x21</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Channel2]</group>
-              <key>beatloop_8_enabled</key>
-              <description>Channel 2 : Loop 4 Led.</description>
-              <status>0x90</status>
-              <midino>0x22</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Sampler1]</group>
-              <key>play</key>
-              <description>Sample 1 - Deck 1 : Play.</description>
-              <status>0x90</status>
-              <midino>0x05</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Sampler2]</group>
-              <key>play</key>
-              <description>Sample 2 - Deck 1 : Play.</description>
-              <status>0x90</status>
-              <midino>0x06</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Sampler3]</group>
-              <key>play</key>
-              <description>Sample 3 - Deck 1 : Play.</description>
-              <status>0x90</status>
-              <midino>0x07</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Sampler4]</group>
-              <key>play</key>
-              <description>Sample 4 - Deck 1 : Play.</description>
-              <status>0x90</status>
-              <midino>0x08</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Sampler1]</group>
-              <key>play</key>
-              <description>Sample 1 - Deck 2 : Play.</description>
-              <status>0x90</status>
-              <midino>0x1B</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Sampler2]</group>
-              <key>play</key>
-              <description>Sample 2 - Deck 2 : Play.</description>
-              <status>0x90</status>
-              <midino>0x1C</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Sampler3]</group>
-              <key>play</key>
-              <description>Sample 3 - Deck 2 : Play.</description>
-              <status>0x90</status>
-              <midino>0x1D</midino>
-              <minimum>0.5</minimum>
-          </output>
-          <output>
-              <group>[Sampler4]</group>
-              <key>play</key>
-              <description>Sample 4 - Deck 2 : Play.</description>
-              <status>0x90</status>
-              <midino>0x1E</midino>
-              <minimum>0.5</minimum>
-          </output>
+            <output>
+                <group>[Recording]</group>
+                <key>status</key>
+                <description>Recording Status</description>
+                <status>0x90</status>
+                <midino>0x30</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>beatloop_8_enabled</key>
+                <description>Channel 2 : Loop 4 Led.</description>
+                <status>0x90</status>
+                <midino>0x22</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>pfl</key>
+                <description>Listen Button Deck A LED</description>
+                <status>0x90</status>
+                <midino>0x14</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>beatloop_1_enabled</key>
+                <description>Channel 2 : Loop 1 Led.</description>
+                <status>0x90</status>
+                <midino>0x1F</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>beatloop_4_enabled</key>
+                <description>Channel 1 : Loop 3 Led.</description>
+                <status>0x90</status>
+                <midino>0x0B</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler3]</group>
+                <key>play</key>
+                <description>Sample 3 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x07</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler3]</group>
+                <key>play</key>
+                <description>Sample 3 - Deck 2 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1D</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler1]</group>
+                <key>play</key>
+                <description>Sample 1 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x05</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler1]</group>
+                <key>play</key>
+                <description>Sample 1 - Deck 2 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1B</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>beatloop_2_enabled</key>
+                <description>Channel 2 : Loop 2 Led.</description>
+                <status>0x90</status>
+                <midino>0x20</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>beatloop_8_enabled</key>
+                <description>Channel 1 : Loop 4 Led.</description>
+                <status>0x90</status>
+                <midino>0x0C</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>play</key>
+                <description>Play Button LED Deck A</description>
+                <status>0x90</status>
+                <midino>0x12</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>pfl</key>
+                <description>Listen Button Deck B LED</description>
+                <status>0x90</status>
+                <midino>0x2A</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>beatloop_1_enabled</key>
+                <description>Channel 1 : Loop 1 Led.</description>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler4]</group>
+                <key>play</key>
+                <description>Sample 4 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x08</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler4]</group>
+                <key>play</key>
+                <description>Sample 4 - Deck 2 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1E</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler2]</group>
+                <key>play</key>
+                <description>Sample 2 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x06</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler2]</group>
+                <key>play</key>
+                <description>Sample 2 - Deck 2 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1C</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>beatloop_2_enabled</key>
+                <description>Channel 1 : Loop 2 Led.</description>
+                <status>0x90</status>
+                <midino>0x0A</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>beatloop_4_enabled</key>
+                <description>Channel 2 : Loop 3 Led.</description>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>play</key>
+                <description>Play Button LED Deck B</description>
+                <status>0x90</status>
+                <midino>0x28</midino>
+                <minimum>0.5</minimum>
+            </output>
         </outputs>
     </controller>
 </MixxxControllerPreset>
