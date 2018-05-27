@@ -618,6 +618,14 @@
                 <minimum>0.5</minimum>
             </output>
             <output>
+                <group>[EffectRack1_EffectUnit1_Effect2]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 212 messages.</description>
+                <status>0x90</status>
+                <midino>0x02</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
                 <group>[Channel2]</group>
                 <key>beatloop_1_enabled</key>
                 <description>Channel 2 : Loop 1 Led.</description>
@@ -674,6 +682,14 @@
                 <minimum>0.5</minimum>
             </output>
             <output>
+                <group>[EffectRack1_EffectUnit2_Effect2]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 234 messages.</description>
+                <status>0x90</status>
+                <midino>0x18</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
                 <group>[Channel1]</group>
                 <key>beatloop_8_enabled</key>
                 <description>Channel 1 : Loop 4 Led.</description>
@@ -690,6 +706,14 @@
                 <minimum>0.5</minimum>
             </output>
             <output>
+                <group>[EffectRack1_EffectUnit1_Effect3]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 222 messages.</description>
+                <status>0x90</status>
+                <midino>0x03</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
                 <group>[Channel2]</group>
                 <key>pfl</key>
                 <description>Listen Button Deck B LED</description>
@@ -703,6 +727,22 @@
                 <description>Channel 1 : Loop 1 Led.</description>
                 <status>0x90</status>
                 <midino>0x09</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[EffectRack1_EffectUnit1_Effect1]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 218 messages.</description>
+                <status>0x90</status>
+                <midino>0x01</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[EffectRack1_EffectUnit2_Effect3]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 240 messages.</description>
+                <status>0x90</status>
+                <midino>0x19</midino>
                 <minimum>0.5</minimum>
             </output>
             <output>
@@ -751,6 +791,14 @@
                 <description>Channel 2 : Loop 3 Led.</description>
                 <status>0x90</status>
                 <midino>0x21</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[EffectRack1_EffectUnit2_Effect1]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 230 messages.</description>
+                <status>0x90</status>
+                <midino>0x17</midino>
                 <minimum>0.5</minimum>
             </output>
             <output>
