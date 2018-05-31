@@ -1,5 +1,7 @@
 var DjControlAirS = {};
 
+DjControlAirS.WHEEL_TICK = 0.0001;
+
 DjControlAirS.init  = function(id) {
   DjControlAirS.id = id;
 
@@ -58,12 +60,17 @@ DjControlAirS.wheelTurn = function (channel, control, value, status, group) {
 
     if (engine.isScratching(deckNumber)) {
         engine.scratchTick(deckNumber, newValue);
-    } /*else if (engine.getValue(group, "play") == 0) {
-  		var new_position = engine.getValue(group,"playposition") + 0.008 * (value == 0x01 ? 1 : -1)
-  		if(new_position<0) new_position = 0
-  		if(new_position>1) new_position = 1
-  		engine.setValue(group, "playposition", new_position);
-    }*/ else {
+    } else if (engine.getValue(group, "play") == 0) {
+      var currentPosition = engine.getValue(group,"playposition");
+  		var newPosition = currentPosition + DjControlAirS.WHEEL_TICK * (value == 0x01 ? 1 : -1);
+  		if (newPosition < 0) {
+        newPosition = 0;
+      }
+  		if (newPosition > 1) {
+        newPosition = 1;
+      }
+  		engine.setValue(group, "playposition", newPosition);
+    } else {
       engine.setValue('[Channel' + deckNumber + ']', 'jog', newValue);
     }
 };
