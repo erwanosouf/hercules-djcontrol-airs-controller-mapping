@@ -610,6 +610,26 @@
                     <normal/>
                 </options>
             </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x35</midino>
+                <group>[Playlist]</group>
+                <key>SelectNextPlaylist</key>
+                <description>Playlist Files</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <status>0x90</status>
+                <midino>0x36</midino>
+                <group>[Playlist]</group>
+                <key>SelectPrevPlaylist</key>
+                <description>Playlist Folders</description>
+                <options>
+                    <normal/>
+                </options>
+            </control>
         </controls>
         <outputs>
             <output>
