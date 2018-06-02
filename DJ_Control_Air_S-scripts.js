@@ -2,6 +2,8 @@ var DjControlAirS = {};
 
 DjControlAirS.WHEEL_TICK = 0.0001;
 
+DjControlAirS.shiftButtonPressed = false;
+
 DjControlAirS.init  = function(id) {
   DjControlAirS.id = id;
 
@@ -37,6 +39,25 @@ DjControlAirS.shutdown = function() {
 DjControlAirS.test = function (channel, control, value, status, group) {
     // your custom code goes here
 };
+
+DjControlAirS.sampler = function(midino, control, value, status, group) {
+  if (DjControlAirS.shiftButtonPressed && value != 0x00) {
+    engine.setValue(group, "LoadSelectedTrack", 1);
+    return;
+  }
+  if (value != 0x00 && engine.getValue(group, "play") === 0) {
+    engine.setValue(group, "start_play", 1);
+	}
+  if (value == 0x00 && engine.getValue(group, "play") !== 0) {
+  	engine.setValue(group, "play", 0);
+  }
+}
+
+
+DjControlAirS.shift = function(midino, control, value, status, group) {
+	DjControlAirS.shiftButtonPressed = (value == 0x7f);
+  midi.sendShortMsg(status, control, value);
+}
 
 // The button that enables/disables scratching
 DjControlAirS.wheelTouch = function (channel, control, value, status, group) {
