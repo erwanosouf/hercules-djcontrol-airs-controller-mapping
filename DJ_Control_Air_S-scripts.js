@@ -2,6 +2,8 @@ var DjControlAirS = {};
 
 DjControlAirS.WHEEL_TICK = 0.0001;
 
+DjControlAirS.SAMPLER_MODE_STOP_ON_RELEASE = false;
+
 DjControlAirS.shiftButtonPressed = false;
 
 DjControlAirS.init  = function(id) {
@@ -45,10 +47,12 @@ DjControlAirS.sampler = function(midino, control, value, status, group) {
     engine.setValue(group, "LoadSelectedTrack", 1);
     return;
   }
-  if (value != 0x00 && engine.getValue(group, "play") === 0) {
+  var playing = engine.getValue(group, "play") !== 0;
+  var stopOnRelease = DjControlAirS.SAMPLER_MODE_STOP_ON_RELEASE;
+  if (value != 0x00 && (!playing || !stopOnRelease)) {
     engine.setValue(group, "start_play", 1);
 	}
-  if (value == 0x00 && engine.getValue(group, "play") !== 0) {
+  if (stopOnRelease && value == 0x00 && playing) {
   	engine.setValue(group, "play", 0);
   }
 }

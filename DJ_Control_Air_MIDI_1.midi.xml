@@ -81,6 +81,16 @@
                 </options>
             </control>
             <control>
+                <group>[PreviewDeck1]</group>
+                <key>LoadSelectedTrackAndPlay</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0x90</status>
+                <midino>0x2D</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
                 <group>[Channel1]</group>
                 <key>cue_default</key>
                 <description>MIDI Learned from 12 messages.</description>
@@ -141,16 +151,6 @@
                 </options>
             </control>
             <control>
-              <group>[Master]</group>
-              <key>DjControlAirS.shift</key>
-              <description>Use Magic Button as Shift Button</description>
-              <status>0x90</status>
-              <midino>0x2E</midino>
-              <options>
-                  <script-binding/>
-              </options>
-            </control>
-            <control>
                 <group>[Channel2]</group>
                 <key>beatloop_4_toggle</key>
                 <description>MIDI Learned from 42 messages.</description>
@@ -197,7 +197,7 @@
                 <status>0x90</status>
                 <midino>0x1B</midino>
                 <options>
-                  <script-binding/>
+                    <script-binding/>
                 </options>
             </control>
             <control>
@@ -276,6 +276,16 @@
                 <description>MIDI Learned from 26 messages.</description>
                 <status>0x90</status>
                 <midino>0x0F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Playlist]</group>
+                <key>SelectPrevPlaylist</key>
+                <description>Playlist Folders</description>
+                <status>0x90</status>
+                <midino>0x36</midino>
                 <options>
                     <normal/>
                 </options>
@@ -386,6 +396,16 @@
                 <description>MIDI Learned from 32 messages.</description>
                 <status>0x90</status>
                 <midino>0x0E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Playlist]</group>
+                <key>SelectNextPlaylist</key>
+                <description>Playlist Files</description>
+                <status>0x90</status>
+                <midino>0x35</midino>
                 <options>
                     <normal/>
                 </options>
@@ -551,6 +571,16 @@
                 </options>
             </control>
             <control>
+                <group>[Master]</group>
+                <key>DjControlAirS.shift</key>
+                <description>Use Magic Button as Shift Button</description>
+                <status>0x90</status>
+                <midino>0x2E</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
                 <group>[Channel1]</group>
                 <key>play</key>
                 <description>MIDI Learned from 8 messages.</description>
@@ -600,36 +630,6 @@
                     <normal/>
                 </options>
             </control>
-            <control>
-                <group>[PreviewDeck1]</group>
-                <key>LoadSelectedTrackAndPlay</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x90</status>
-                <midino>0x2D</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x35</midino>
-                <group>[Playlist]</group>
-                <key>SelectNextPlaylist</key>
-                <description>Playlist Files</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <status>0x90</status>
-                <midino>0x36</midino>
-                <group>[Playlist]</group>
-                <key>SelectPrevPlaylist</key>
-                <description>Playlist Folders</description>
-                <options>
-                    <normal/>
-                </options>
-            </control>
         </controls>
         <outputs>
             <output>
@@ -647,6 +647,22 @@
                 <description>Channel 2 : Loop 4 Led.</description>
                 <status>0x90</status>
                 <midino>0x22</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler7]</group>
+                <key>play</key>
+                <description>Sample 7 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1D</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler5]</group>
+                <key>play</key>
+                <description>Sample 5 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1B</midino>
                 <minimum>0.5</minimum>
             </output>
             <output>
@@ -690,27 +706,11 @@
                 <minimum>0.5</minimum>
             </output>
             <output>
-                <group>[Sampler7]</group>
-                <key>play</key>
-                <description>Sample 7 : Play.</description>
-                <status>0x90</status>
-                <midino>0x1D</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
                 <group>[Sampler1]</group>
                 <key>play</key>
                 <description>Sample 1 : Play.</description>
                 <status>0x90</status>
                 <midino>0x05</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
-                <group>[Sampler5]</group>
-                <key>play</key>
-                <description>Sample 5 : Play.</description>
-                <status>0x90</status>
-                <midino>0x1B</midino>
                 <minimum>0.5</minimum>
             </output>
             <output>
@@ -738,6 +738,14 @@
                 <minimum>0.5</minimum>
             </output>
             <output>
+                <group>[Sampler8]</group>
+                <key>play</key>
+                <description>Sample 8 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1E</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
                 <group>[Channel1]</group>
                 <key>play</key>
                 <description>Play Button LED Deck A</description>
@@ -759,6 +767,14 @@
                 <description>Listen Button Deck B LED</description>
                 <status>0x90</status>
                 <midino>0x2A</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler6]</group>
+                <key>play</key>
+                <description>Sample 6 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1C</midino>
                 <minimum>0.5</minimum>
             </output>
             <output>
@@ -794,27 +810,11 @@
                 <minimum>0.5</minimum>
             </output>
             <output>
-                <group>[Sampler8]</group>
-                <key>play</key>
-                <description>Sample 8 : Play.</description>
-                <status>0x90</status>
-                <midino>0x1E</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
                 <group>[Sampler2]</group>
                 <key>play</key>
                 <description>Sample 2 - Deck 1 : Play.</description>
                 <status>0x90</status>
                 <midino>0x06</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
-                <group>[Sampler6]</group>
-                <key>play</key>
-                <description>Sample 6 : Play.</description>
-                <status>0x90</status>
-                <midino>0x1C</midino>
                 <minimum>0.5</minimum>
             </output>
             <output>
