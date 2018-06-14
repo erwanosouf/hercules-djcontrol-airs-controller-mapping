@@ -849,6 +849,22 @@
                 <midino>0x28</midino>
                 <minimum>0.5</minimum>
             </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>cue_indicator</key>
+                <description>Cue Indicator.</description>
+                <status>0x90</status>
+                <midino>0x11</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>cue_indicator</key>
+                <description>MIDI Learned from 14 messages.</description>
+                <status>0x90</status>
+                <midino>0x27</midino>
+                <minimum>0.5</minimum>
+            </output>
         </outputs>
     </controller>
 </MixxxControllerPreset>
