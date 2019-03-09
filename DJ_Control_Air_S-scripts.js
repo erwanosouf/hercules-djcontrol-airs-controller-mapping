@@ -1,6 +1,6 @@
 var DjControlAirS = {};
 
-DjControlAirS.WHEEL_TICK = 0.0001;
+DjControlAirS.WHEEL_TICK = 0.00005;
 
 DjControlAirS.SAMPLER_MODE_STOP_ON_RELEASE = false;
 
