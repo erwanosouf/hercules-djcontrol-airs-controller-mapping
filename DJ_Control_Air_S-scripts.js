@@ -65,27 +65,32 @@ DjControlAirS.shift = function(midino, control, value, status, group) {
 
 // The button that enables/disables scratching
 DjControlAirS.wheelTouch = function (channel, control, value, status, group) {
+    //midi.sendShortMsg(0x90, 0x2d, 0x7f); // Scratch
     var deckNumber = script.deckFromGroup(group);
-    if ((status & 0xF0) === 0x90) {    // If button down
-        if (value === 0x7F) {  // Some wheels send 0x90 on press and release, so you need to check the value
-          var alpha = 1.0 / 8;
-          var beta = alpha / 32;
-          engine.scratchEnable(deckNumber, 128, 33 + 1/3, alpha, beta);
-        }
-    } else {    // If button up
-        engine.scratchDisable(deckNumber);
+    if (value === 0x7F) { 
+      var alpha = 1.0 / 8;
+      var beta = alpha / 32;
+      engine.scratchEnable(deckNumber, 128, 33 + 1/3, alpha, beta);
+    } else {
+      engine.scratchDisable(deckNumber);
     }
 };
 
 // The wheel that actually controls the scratching
 DjControlAirS.wheelTurn = function (channel, control, value, status, group) {
-    var newValue = -(value - 64);
-    // In either case, register the movement
     var deckNumber = script.deckFromGroup(group);
+    var playing = engine.getValue(group, "play") != 0;
+    var scratching = engine.isScratching(deckNumber);
 
-    if (engine.isScratching(deckNumber)) {
+    var newValue = value == 0x01 ? 1 : -1;
+    if (playing) {
+      if (scratching) {
         engine.scratchTick(deckNumber, newValue);
-    } else if (engine.getValue(group, "play") == 0) {
+      }  else {
+        engine.setValue('[Channel' + deckNumber + ']', 'jog', newValue);
+      }
+    } else {
+      // Needle search
       var currentPosition = engine.getValue(group,"playposition");
   		var newPosition = currentPosition + DjControlAirS.WHEEL_TICK * (value == 0x01 ? 1 : -1);
   		if (newPosition < 0) {
@@ -95,7 +100,5 @@ DjControlAirS.wheelTurn = function (channel, control, value, status, group) {
         newPosition = 1;
       }
   		engine.setValue(group, "playposition", newPosition);
-    } else {
-      engine.setValue('[Channel' + deckNumber + ']', 'jog', newValue);
     }
 };
