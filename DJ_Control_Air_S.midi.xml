@@ -1,0 +1,864 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MixxxControllerPreset mixxxVersion="" schemaVersion="1">
+    <info>
+        <name>Hercules DJ Control Air S - YéKrik</name>
+        <author>Erwan Osouf</author>
+        <description>Custom Mapping</description>
+    </info>
+    <controller id="DJ">
+        <scriptfiles>
+            <file functionprefix="DjControlAirS" filename="DJ_Control_Air_S-scripts.js"/>
+        </scriptfiles>
+        <controls>
+            <control>
+                <group>[Channel2]</group>
+                <key>rate</key>
+                <description>Channel 2 : Speed Control.</description>
+                <status>0xB0</status>
+                <midino>0x35</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>pfl</key>
+                <description>MIDI Learned from 54 messages.</description>
+                <status>0x90</status>
+                <midino>0x2A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>rate_temp_up</key>
+                <description>MIDI Learned from 32 messages.</description>
+                <status>0x90</status>
+                <midino>0x0E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>cue_default</key>
+                <description>MIDI Learned from 14 messages.</description>
+                <status>0x90</status>
+                <midino>0x27</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler5]</group>
+                <key>DjControlAirS.sampler</key>
+                <description>Sample 5 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1B</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Recording]</group>
+                <key>toggle_recording</key>
+                <description>Toggle Recording</description>
+                <status>0x90</status>
+                <midino>0x30</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>pfl</key>
+                <description>MIDI Learned from 52 messages.</description>
+                <status>0x90</status>
+                <midino>0x14</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler4]</group>
+                <key>DjControlAirS.sampler</key>
+                <description>Sample 4 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x08</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>loop_halve</key>
+                <description>MIDI Learned from 42 messages.</description>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler1]</group>
+                <key>DjControlAirS.sampler</key>
+                <description>Sample 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x05</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter1</key>
+                <description>Channel 1 : Filter Low.</description>
+                <status>0xB0</status>
+                <midino>0x39</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler8]</group>
+                <key>DjControlAirS.sampler</key>
+                <description>Sample 8 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1E</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>DjControlAirS.wheelTurn</key>
+                <description>Jog Wheel Deck 1 Pressed</description>
+                <status>0xB0</status>
+                <midino>0x32</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>LoadSelectedTrack</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0x90</status>
+                <midino>0x2B</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>back</key>
+                <description>MIDI Learned from 26 messages.</description>
+                <status>0x90</status>
+                <midino>0x0F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>rate_temp_up</key>
+                <description>MIDI Learned from 36 messages.</description>
+                <status>0x90</status>
+                <midino>0x24</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit2_Effect2]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 234 messages.</description>
+                <status>0x90</status>
+                <midino>0x18</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+                <key>parameter3</key>
+                <description>Channel 2 : Filter High.</description>
+                <status>0xB0</status>
+                <midino>0x3C</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>LoadSelectedTrack</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0x90</status>
+                <midino>0x15</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>beatloop_4_toggle</key>
+                <description>MIDI Learned from 216 messages.</description>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>DjControlAirS.shift</key>
+                <description>Use Magic Button as Shift Button</description>
+                <status>0x90</status>
+                <midino>0x2E</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit1_Effect2]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 212 messages.</description>
+                <status>0x90</status>
+                <midino>0x02</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>headGain_down</key>
+                <description>Headphones Volume Down</description>
+                <status>0x90</status>
+                <midino>0x3B</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>beatloop_4_toggle</key>
+                <description>MIDI Learned from 35 messages.</description>
+                <status>0x90</status>
+                <midino>0x1F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Playlist]</group>
+                <key>SelectNextTrack</key>
+                <description>MIDI Learned from 56 messages.</description>
+                <status>0x90</status>
+                <midino>0x34</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>DjControlAirS.wheelTurn</key>
+                <description>Jog Wheel Deck 2 Pressed</description>
+                <status>0xB0</status>
+                <midino>0x33</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>play</key>
+                <description>MIDI Learned from 10 messages.</description>
+                <status>0x90</status>
+                <midino>0x28</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>loop_double</key>
+                <description>MIDI Learned from 24 messages.</description>
+                <status>0x90</status>
+                <midino>0x0C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>back</key>
+                <description>MIDI Learned from 30 messages.</description>
+                <status>0x90</status>
+                <midino>0x25</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit2_Effect3]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 240 messages.</description>
+                <status>0x90</status>
+                <midino>0x19</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+                <key>parameter2</key>
+                <description>Channel 2 : Filter Mid.</description>
+                <status>0xB0</status>
+                <midino>0x3D</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>play</key>
+                <description>MIDI Learned from 8 messages.</description>
+                <status>0x90</status>
+                <midino>0x12</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>volume</key>
+                <description>Channel 1 : Volume.</description>
+                <status>0xB0</status>
+                <midino>0x36</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit1_Effect3]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 222 messages.</description>
+                <status>0x90</status>
+                <midino>0x03</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler6]</group>
+                <key>DjControlAirS.sampler</key>
+                <description>Sample 6 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1C</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Playlist]</group>
+                <key>SelectNextPlaylist</key>
+                <description>Playlist Files</description>
+                <status>0x90</status>
+                <midino>0x35</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>sync_enabled</key>
+                <description>MIDI Learned from 22 messages.</description>
+                <status>0x90</status>
+                <midino>0x29</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>DjControlAirS.wheelTurn</key>
+                <description>Jog Wheel Deck 1</description>
+                <status>0xB0</status>
+                <midino>0x30</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>rate_temp_down</key>
+                <description>MIDI Learned from 34 messages.</description>
+                <status>0x90</status>
+                <midino>0x0D</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>loop_double</key>
+                <description>MIDI Learned from 152 messages.</description>
+                <status>0x90</status>
+                <midino>0x22</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler2]</group>
+                <key>DjControlAirS.sampler</key>
+                <description>Sample 2 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x06</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>crossfader</key>
+                <description>Crossfader</description>
+                <status>0xB0</status>
+                <midino>0x3A</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>sync_enabled</key>
+                <description>MIDI Learned from 20 messages.</description>
+                <status>0x90</status>
+                <midino>0x13</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>DjControlAirS.wheelTouch</key>
+                <description>Jog Wheel Deck 2 Toggle</description>
+                <status>0x90</status>
+                <midino>0x2C</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter3</key>
+                <description>Channel 1 : Filter High.</description>
+                <status>0xB0</status>
+                <midino>0x37</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler7]</group>
+                <key>DjControlAirS.sampler</key>
+                <description>Sample 7 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1D</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>DjControlAirS.wheelTurn</key>
+                <description>Jog Wheel Deck 2</description>
+                <status>0xB0</status>
+                <midino>0x31</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>DjControlAirS.wheelTouch</key>
+                <description>Jog Wheel Deck 1 Toggle</description>
+                <status>0x90</status>
+                <midino>0x16</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>reloop_toggle</key>
+                <description>MIDI Learned from 14 messages.</description>
+                <status>0x90</status>
+                <midino>0x0A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>rate_temp_down</key>
+                <description>MIDI Learned from 38 messages.</description>
+                <status>0x90</status>
+                <midino>0x23</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Sampler3]</group>
+                <key>DjControlAirS.sampler</key>
+                <description>Sample 3 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x07</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>headGain_up</key>
+                <description>Headphones Volume Up</description>
+                <status>0x90</status>
+                <midino>0x3C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>fwd</key>
+                <description>MIDI Learned from 24 messages.</description>
+                <status>0x90</status>
+                <midino>0x10</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>volume</key>
+                <description>Channel 2 : Volume.</description>
+                <status>0xB0</status>
+                <midino>0x3B</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>rate</key>
+                <description>Channel 1 : Speed Control.</description>
+                <status>0xB0</status>
+                <midino>0x34</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>DjControlAirS.vinylEnable</key>
+                <group>[PreviewDeck1]</group>
+                <key>LoadSelectedTrackAndPlay</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0x90</status>
+                <midino>0x2D</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit1_Effect1]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 218 messages.</description>
+                <status>0x90</status>
+                <midino>0x01</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>fwd</key>
+                <description>MIDI Learned from 28 messages.</description>
+                <status>0x90</status>
+                <midino>0x26</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Playlist]</group>
+                <key>SelectPrevTrack</key>
+                <description>Next Song in Playlist</description>
+                <status>0x90</status>
+                <midino>0x33</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+                <key>parameter1</key>
+                <description>Channel 2 : Filter Low.</description>
+                <status>0xB0</status>
+                <midino>0x3E</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit2_Effect1]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 230 messages.</description>
+                <status>0x90</status>
+                <midino>0x17</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>loop_halve</key>
+                <description>MIDI Learned from 21 messages.</description>
+                <status>0x90</status>
+                <midino>0x0B</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>reloop_toggle</key>
+                <description>MIDI Learned from 48 messages.</description>
+                <status>0x90</status>
+                <midino>0x20</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter2</key>
+                <description>Channel 1 : Filter Mid.</description>
+                <status>0xB0</status>
+                <midino>0x38</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>cue_default</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0x90</status>
+                <midino>0x11</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Playlist]</group>
+                <key>SelectPrevPlaylist</key>
+                <description>Playlist Folders</description>
+                <status>0x90</status>
+                <midino>0x36</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+        </controls>
+        <outputs>
+            <output>
+                <group>[Channel2]</group>
+                <key>pfl</key>
+                <description>Listen Button Deck B LED</description>
+                <status>0x90</status>
+                <midino>0x2A</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[EffectRack1_EffectUnit1_Effect2]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 212 messages.</description>
+                <status>0x90</status>
+                <midino>0x02</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>pfl</key>
+                <description>Listen Button Deck A LED</description>
+                <status>0x90</status>
+                <midino>0x14</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler3]</group>
+                <key>play</key>
+                <description>Sample 3 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x07</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[EffectRack1_EffectUnit1_Effect1]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 218 messages.</description>
+                <status>0x90</status>
+                <midino>0x01</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler6]</group>
+                <key>play</key>
+                <description>Sample 6 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1C</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler1]</group>
+                <key>play</key>
+                <description>Sample 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x05</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>reloop_toggle</key>
+                <description>Channel 1 : Loop 3 Led.</description>
+                <status>0x90</status>
+                <midino>0x0B</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler4]</group>
+                <key>play</key>
+                <description>Sample 4 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x08</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>play</key>
+                <description>Play Button LED Deck B</description>
+                <status>0x90</status>
+                <midino>0x28</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[EffectRack1_EffectUnit2_Effect3]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 240 messages.</description>
+                <status>0x90</status>
+                <midino>0x19</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>play</key>
+                <description>Play Button LED Deck A</description>
+                <status>0x90</status>
+                <midino>0x12</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler8]</group>
+                <key>play</key>
+                <description>Sample 8 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1E</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>cue_indicator</key>
+                <description>MIDI Learned from 14 messages.</description>
+                <status>0x90</status>
+                <midino>0x27</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[EffectRack1_EffectUnit1_Effect3]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 222 messages.</description>
+                <status>0x90</status>
+                <midino>0x03</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[EffectRack1_EffectUnit2_Effect2]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 234 messages.</description>
+                <status>0x90</status>
+                <midino>0x18</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler5]</group>
+                <key>play</key>
+                <description>Sample 5 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1B</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Recording]</group>
+                <key>status</key>
+                <description>Recording Status</description>
+                <status>0x90</status>
+                <midino>0x30</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>reloop_toggle</key>
+                <description>Channel 2 : Loop 3 Led.</description>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[EffectRack1_EffectUnit2_Effect1]</group>
+                <key>enabled</key>
+                <description>MIDI Learned from 230 messages.</description>
+                <status>0x90</status>
+                <midino>0x17</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler7]</group>
+                <key>play</key>
+                <description>Sample 7 : Play.</description>
+                <status>0x90</status>
+                <midino>0x1D</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Sampler2]</group>
+                <key>play</key>
+                <description>Sample 2 - Deck 1 : Play.</description>
+                <status>0x90</status>
+                <midino>0x06</midino>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>cue_indicator</key>
+                <description>Cue Indicator.</description>
+                <status>0x90</status>
+                <midino>0x11</midino>
+                <minimum>0.5</minimum>
+            </output>
+        </outputs>
+    </controller>
+</MixxxControllerPreset>

@@ -5,6 +5,8 @@ DjControlAirS.WHEEL_TICK = 0.00005;
 DjControlAirS.SAMPLER_MODE_STOP_ON_RELEASE = false;
 
 DjControlAirS.shiftButtonPressed = false;
+DjControlAirS.vinylEnabled = false;
+
 
 DjControlAirS.init  = function(id) {
   DjControlAirS.id = id;
@@ -23,13 +25,6 @@ DjControlAirS.init  = function(id) {
     midi.sendShortMsg(0x90, 0x3A, 0x7f); // headset "Cue" button LED
   }
 
-  /*
-  engine.connectControl("[Channel1]", "beat_active", "HerculesAir.beatProgressDeckA")
-  engine.connectControl("[Channel1]", "play", "HerculesAir.playDeckA")
-
-  engine.connectControl("[Channel2]", "beat_active", "HerculesAir.beatProgressDeckB")
-  engine.connectControl("[Channel2]", "play", "HerculesAir.playDeckB")
-  */
   print ("DjControlAirS[" + id + "] : initialized.");
 };
 
@@ -63,10 +58,12 @@ DjControlAirS.shift = function(midino, control, value, status, group) {
   midi.sendShortMsg(status, control, value);
 }
 
-// The button that enables/disables scratching
+
 DjControlAirS.wheelTouch = function (channel, control, value, status, group) {
-    //midi.sendShortMsg(0x90, 0x2d, 0x7f); // Scratch
     var deckNumber = script.deckFromGroup(group);
+    if (!DjControlAirS.vinylEnabled) {
+      return;
+    }
     if (value === 0x7F) { 
       var alpha = 1.0 / 8;
       var beta = alpha / 32;
@@ -74,6 +71,16 @@ DjControlAirS.wheelTouch = function (channel, control, value, status, group) {
     } else {
       engine.scratchDisable(deckNumber);
     }
+};
+
+// The button that enables/disables scratching
+DjControlAirS.vinylEnable = function (channel, control, value, status, group) {
+  // On release
+  if (value === 0x00) {
+    var vinylEnabled = !DjControlAirS.vinylEnabled;
+    DjControlAirS.vinylEnabled = vinylEnabled;
+    midi.sendShortMsg(0x90, 0x2d, DjControlAirS.vinylEnabled ? 0x7f : 0x00);
+  }
 };
 
 // The wheel that actually controls the scratching
